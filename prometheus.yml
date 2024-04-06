@@ -26,4 +26,4 @@ scrape_configs:
     # scheme defaults to 'http'.
 
     static_configs:
-      - targets: ["localhost:9090"]
+      - targets: ["prometheus.default.svc.cluster.local:9090", "node-redis.default.svc.cluster.local:8080", "db-redis-rami.default.svc.cluster.local:6379"]
